@@ -1,0 +1,7 @@
+# 把本插件插入 profile 的 loader 层。
+#
+# id 与 name 都保持唯一：id 是 loader 的行地址（用户 patch 层按它做覆盖），
+# name 是包的解析名。改名会同时破坏两者，所以别动。
+- insert:
+    - id: queue-dock-guard
+      name: 'dsh-skin-surface-guard'

@@ -1,0 +1,47 @@
+{
+  "name": "dsh-skin-surface-guard",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Restores a floating surface's background, edge and radius when a DSH skin paints it in the same opaque colour as the surface beneath it.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renchanzhao-rgb/dsh-skin-surface-guard.git"
+  },
+  "homepage": "https://github.com/renchanzhao-rgb/dsh-skin-surface-guard#readme",
+  "bugs": {
+    "url": "https://github.com/renchanzhao-rgb/dsh-skin-surface-guard/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "skin",
+    "theme",
+    "cordis"
+  ],
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
