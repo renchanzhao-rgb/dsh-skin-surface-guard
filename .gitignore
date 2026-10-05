@@ -1,0 +1,11 @@
+# 依赖与构建产物
+node_modules/
+*.log
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
